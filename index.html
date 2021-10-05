@@ -1,35 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Profile card component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <title>Frontend Mentor | Profile card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+
+        #card {
+            position: absolute;
+            overflow: hidden;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            /*box-shadow: 10px 10px 50px 7px hsl(227, 10%, 46%);*/
+            text-align: center;
+            border-radius: 15px;
+        }
+
+        body {
+            font-family: 'Kumbh Sans', sans-serif;
+            background: url('./images/bg-pattern-top.svg') left top no-repeat, url('./images/bg-pattern-bottom.svg') right bottom no-repeat, hsl(185, 75%, 39%);
+            background-position: top -50vh right 50vw, top 50vh left 50vw;
+            border-radius: 15px;
+        }
+
+        p {
+        }
+
+        table{
+            float: top;
+            position: relative;
+            top: -30px;
+        }
+        th {
+            padding-left: 30px;
+            padding-right: 30px;
+            color: black;
+            font-size: x-large;
+            font-weight: bolder;
+            text-align: center;
+        }
+
+        td {
+            padding-left: 30px;
+            padding-right: 30px;
+            color: hsl(229, 23%, 23%);
+            font-size: small;
+            font-weight: bolder;
+            text-align: center;
+        }
+
+        #photo {
+            position: relative;
+            border-radius: 50%;
+            top: -50px;
+            border-style: solid;
+            border-color: white;
+        }
+
+        #details {
+            position: relative;
+            top: -50px;
+        }
+        h2{
+            margin: 10px;
+        }
+        p{
+            color: hsl(227, 10%, 46%);
+        }
+
+    </style>
 </head>
 <body>
-  Victor Crest
-  26
-  London
+<div id="card">
+    <img src="images/bg-pattern-card.svg" alt="card"><br>
+    <img id="photo" src="images/image-victor.jpg" alt="image">
+    <div id="details">
+        <h2 style="display: inline">Victor Crest </h2>
+        <h3 style="display: inline;color: hsl(227, 10%, 46%)">26</h3>
+        <p>London</p>
+        <hr/>
+    </div>
+    <table>
+        <tr>
+            <th>80K</th>
+            <th>803K</th>
+            <th>1.4K</th>
+        </tr>
+        <tr>
+            <td>Followers</td>
+            <td>Likes</td>
+            <td>Photos</td>
+        </tr>
+    </table>
+    <!--    <p>-->
 
-  80K
-  Followers
+    <!--      80K-->
+    <!--      Followers-->
 
-  803K
-  Likes
+    <!--      803K-->
+    <!--      Likes-->
 
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    <!--      1.4K-->
+    <!--      Photos-->
+    <!--    </p>-->
+</div>
+<div>
+</div>
+<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+</div>
 </body>
 </html>
