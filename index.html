@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,6 +29,7 @@
             background: url('./images/bg-pattern-top.svg') left top no-repeat, url('./images/bg-pattern-bottom.svg') right bottom no-repeat, hsl(185, 75%, 39%);
             background-position: top -50vh right 50vw, top 50vh left 50vw;
             border-radius: 15px;
+            overflow: hidden;
         }
 
         table {
@@ -84,27 +85,27 @@
     </style>
 </head>
 <body>
-<div id="card">
-    <img src="images/bg-pattern-card.svg" alt="card"><br>
-    <img id="photo" src="images/image-victor.jpg" alt="image">
-    <div id="details">
-        <h2>Victor Crest </h2>
-        <h3>26</h3>
-        <p>London</p>
-        <hr/>
+    <div id="card">
+        <img src="images/bg-pattern-card.svg" alt="card"><br>
+        <img id="photo" src="images/image-victor.jpg" alt="image">
+        <div id="details">
+            <h2>Victor Crest </h2>
+            <h3>26</h3>
+            <p>London</p>
+            <hr/>
+        </div>
+        <table>
+            <tr>
+                <th>80K</th>
+                <th>803K</th>
+                <th>1.4K</th>
+            </tr>
+            <tr>
+                <td>Followers</td>
+                <td>Likes</td>
+                <td>Photos</td>
+            </tr>
+        </table>
     </div>
-    <table>
-        <tr>
-            <th>80K</th>
-            <th>803K</th>
-            <th>1.4K</th>
-        </tr>
-        <tr>
-            <td>Followers</td>
-            <td>Likes</td>
-            <td>Photos</td>
-        </tr>
-    </table>
-</div>
 </body>
 </html>
